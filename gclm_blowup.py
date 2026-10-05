@@ -961,7 +961,12 @@ F = K/(ξ^(1/c) − iK/2). Glattheit bei ξ = 0 verlangt 1/c = n ∈ ℕ; keine 
 der oberen Halbebene nur für n = 1. Also: **CLM hat genau ein glattes
 selbstähnliches Profil, c = 1, Ω = −2ξ/(1+ξ²)** (normiert: −4ξ/(4+ξ²)).
 Das dient als Test der Residuum-Pipeline und als Kontrolle: weitere PINN-Minima
-bei a = 0 sind Artefakte. Nicht aus der Literatur geprüft.
+bei a = 0 sind Artefakte. Das Profil selbst ist die bekannte exakte CLM-Lösung
+(Constantin, Lax & Majda 1985; Lushnikov, Silantyev & Siegel 2021, Abschnitt 3).
+Die Eindeutigkeitsaussage ist eigene Herleitung und nicht mit der Literatur
+abgeglichen. Für a = 1/2 ist ebenfalls eine exakte Lösung bekannt, mit c = 1/3
+(Chen 2020; Lushnikov et al. 2021, Gl. 38–39). Vollständige Angaben: README,
+Abschnitt References.
 
 ## 5. Hilbert-Transformation auf ℝ
 ξ = L·tan(θ/2) ist die Cayley-Abbildung; analytische Funktionen der oberen
@@ -969,7 +974,9 @@ Halbebene gehen in analytische Funktionen der Kreisscheibe über. Daher gilt
 H_ℝ[f](ξ(θ)) = H_T[g](θ) + C mit der periodischen Hilbert-Transformation H_T
 (Multiplikator −i·sign(k), FFT) und g(θ) = f(ξ(θ)). Die Konstante C folgt aus
 H_ℝ[f](±∞) = 0: C = −H_T[g](π). Ohne diese Konstante ist z. B. H[x/(1+x²)]
-falsch (Test 2 in Schritt 0).
+falsch (Test 2 in Schritt 0). Die Abbildung ist ein Standardverfahren für die
+Hilbert-Transformation auf ℝ (Weideman 1995) und wird für gCLM auch von
+Lushnikov et al. (2021, Gl. 52) verwendet.
 
 ## 6. Abweichung: Fernfeld-Darstellung
 Das Fernfeld eines Profils ist Ω ~ sign(ξ)|ξ|^(−1/c), in θ also |π−θ|^(1/c).
