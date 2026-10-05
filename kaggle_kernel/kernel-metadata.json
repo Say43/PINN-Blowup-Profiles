@@ -1,0 +1,13 @@
+{
+  "id": "says43/gclm-blowup-pinn",
+  "title": "gclm-blowup-pinn",
+  "code_file": "kaggle_run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

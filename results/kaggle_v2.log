@@ -1,0 +1,237 @@
+[{"stream_name":"stderr","time":6.7974784,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.7975330419999995,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.7350150840000005,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.735066661,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.735073752,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.735078815,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.422917257,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.422953159,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.42295731,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.422960392,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.642345522,"data":"Writing gclm_blowup.py\n"}
+,{"stream_name":"stdout","time":9.714124175,"data":"GPU 0: Tesla T4 (UUID: GPU-7940cca9-284e-cd1a-8049-a0a38b942f6d)\r\n"}
+,{"stream_name":"stdout","time":9.714179923,"data":"GPU 1: Tesla T4 (UUID: GPU-3f8b3fe9-096c-1fea-ac54-62c59a98f270)\r\n"}
+,{"stream_name":"stdout","time":20.038199136,"data":"[  0.00 min] Konfiguration: FULL, Ausgabe: /kaggle/working/results\r\n"}
+,{"stream_name":"stdout","time":20.796064358,"data":"[  0.01 min] Schritt 0 sympy: ok=True\r\n"}
+,{"stream_name":"stdout","time":20.796100655,"data":"[  0.01 min] Schritt 0 numeric: ok=True\r\n"}
+,{"stream_name":"stdout","time":21.306095319,"data":"/kaggle/working/gclm_blowup.py:378: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\r\n"}
+,{"stream_name":"stdout","time":21.306133659,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\r\n"}
+,{"stream_name":"stdout","time":21.306140869,"data":"  out[\"sing_path_max_R\"] = float(R2.abs().max())\r\n"}
+,{"stream_name":"stdout","time":21.306146373,"data":"[  0.02 min] Schritt 0 pipeline: ok=True\r\n"}
+,{"stream_name":"stdout","time":21.66285034,"data":"[  0.03 min] Schritt 1 a=0.0 N=4096: 250 Schritte, 0.3s, Stopp: Aufloesung (Spektrum bei k\u003eN/3 \u003e 1e-08), max|w|=38.2, T=2.01211, c=1.1580, c_alt=1.2239 \r\n"}
+,{"stream_name":"stdout","time":30.367180801,"data":"[  0.17 min] Schritt 1 a=0.0 N=65536: 387 Schritte, 8.7s, Stopp: Aufloesung (Spektrum bei k\u003eN/3 \u003e 1e-08), max|w|=601, T=2.00003, c=1.0067, c_alt=1.0111 \r\n"}
+,{"stream_name":"stdout","time":32.814415288,"data":"[  0.21 min] Schritt 1 a=0.25 N=4096: 1658 Schritte, 2.4s, Stopp: Aufloesung (Spektrum bei k\u003eN/3 \u003e 1e-08), max|w|=300, T=2.40900, c=0.6963, c_alt=0.7038 \r\n"}
+,{"stream_name":"stdout","time":69.971831872,"data":"[  0.83 min] Schritt 1 a=0.25 N=16384: 6486 Schritte, 37.1s, Stopp: Aufloesung (Spektrum bei k\u003eN/3 \u003e 1e-08), max|w|=2.28e+03, T=2.40883, c=0.6850, c_alt=0.6873 \r\n"}
+,{"stream_name":"stdout","time":79.038666723,"data":"[  0.98 min] Schritt 1 a=0.5 N=4096: 6231 Schritte, 9.1s, Stopp: max|omega| \u003e= 1e4, max|w|=1.01e+04, T=3.14159, c=0.3349, c_alt=0.3360 \r\n"}
+,{"stream_name":"stdout","time":214.245582835,"data":"[  3.24 min] Schritt 1 a=0.5 N=16384: 24904 Schritte, 135.2s, Stopp: max|omega| \u003e= 1e4, max|w|=1e+04, T=3.14159, c=0.3351, c_alt=0.3359 \r\n"}
+,{"stream_name":"stdout","time":220.406021499,"data":"[  3.34 min] Geraet: cuda {'gpu': 'Tesla T4', 'n_gpu': 2, 's_per_adam_step': {'cuda': 0.013046757380167643, 'cpu': 0.02276880741119385}}\r\n"}
+,{"stream_name":"stdout","time":262.504013776,"data":"[  4.04 min] scan      a=0.0  c0= 1.0067 -\u003e c=1.0067 loss=5.821e-06 (ok, 42.1s)\r\n"}
+,{"stream_name":"stdout","time":262.552778685,"data":"[  4.04 min] c-Gitter: 17 Werte (+ c_ref); Plan {'t_first_run_s': 42.10386919975281, 'budget_s': 3557.89098572731, 'n_planned': 92, 'est_total_s': 3873.5559663772583, 'nc_before': 20, 'nc_after': 17}\r\n"}
+,{"stream_name":"stdout","time":304.336948914,"data":"[  4.74 min] scan      a=0.0  c0= 0.2000 -\u003e c=0.2000 loss=2.475e-02 (ok, 41.8s)\r\n"}
+,{"stream_name":"stdout","time":345.891442039,"data":"[  5.43 min] scan      a=0.0  c0= 0.2306 -\u003e c=0.2306 loss=1.188e-02 (ok, 41.5s)\r\n"}
+,{"stream_name":"stdout","time":385.998187596,"data":"[  6.10 min] scan      a=0.0  c0= 0.2660 -\u003e c=0.2660 loss=6.186e-03 (ok, 40.1s)\r\n"}
+,{"stream_name":"stdout","time":424.645723506,"data":"[  6.74 min] scan      a=0.0  c0= 0.3537 -\u003e c=0.3537 loss=3.654e-03 (ok, 38.6s)\r\n"}
+,{"stream_name":"stdout","time":462.821895098,"data":"[  7.38 min] scan      a=0.0  c0= 0.4079 -\u003e c=0.4079 loss=2.274e-03 (ok, 38.2s)\r\n"}
+,{"stream_name":"stdout","time":502.234315414,"data":"[  8.04 min] scan      a=0.0  c0= 0.4704 -\u003e c=0.4704 loss=1.099e-03 (ok, 39.4s)\r\n"}
+,{"stream_name":"stdout","time":542.24387223,"data":"[  8.70 min] scan      a=0.0  c0= 0.5424 -\u003e c=0.5424 loss=7.778e-04 (ok, 40.0s)\r\n"}
+,{"stream_name":"stdout","time":584.236895526,"data":"[  9.40 min] scan      a=0.0  c0= 0.6255 -\u003e c=0.6255 loss=3.595e-04 (ok, 42.0s)\r\n"}
+,{"stream_name":"stdout","time":629.064667356,"data":"[ 10.15 min] scan      a=0.0  c0= 0.8318 -\u003e c=0.8318 loss=3.512e-05 (ok, 44.8s)\r\n"}
+,{"stream_name":"stdout","time":676.101064434,"data":"[ 10.93 min] scan      a=0.0  c0= 0.9592 -\u003e c=0.9592 loss=1.016e-05 (ok, 47.0s)\r\n"}
+,{"stream_name":"stdout","time":721.320174943,"data":"[ 11.69 min] scan      a=0.0  c0= 1.1062 -\u003e c=1.1062 loss=8.340e-05 (ok, 45.2s)\r\n"}
+,{"stream_name":"stdout","time":762.961702077,"data":"[ 12.38 min] scan      a=0.0  c0= 1.2756 -\u003e c=1.2756 loss=7.377e-04 (ok, 41.6s)\r\n"}
+,{"stream_name":"stdout","time":805.999873246,"data":"[ 13.10 min] scan      a=0.0  c0= 1.4710 -\u003e c=1.4710 loss=3.865e-03 (ok, 43.0s)\r\n"}
+,{"stream_name":"stdout","time":847.950465638,"data":"[ 13.80 min] scan      a=0.0  c0= 1.6964 -\u003e c=1.6964 loss=9.053e-03 (ok, 42.0s)\r\n"}
+,{"stream_name":"stdout","time":891.888042037,"data":"[ 14.53 min] scan      a=0.0  c0= 2.2559 -\u003e c=2.2559 loss=2.636e-02 (ok, 43.9s)\r\n"}
+,{"stream_name":"stdout","time":935.546849433,"data":"[ 15.26 min] scan      a=0.0  c0= 2.6015 -\u003e c=2.6015 loss=3.569e-02 (ok, 43.7s)\r\n"}
+,{"stream_name":"stdout","time":978.210679371,"data":"[ 15.97 min] scan      a=0.0  c0= 3.0000 -\u003e c=3.0000 loss=4.719e-02 (ok, 42.7s)\r\n"}
+,{"stream_name":"stdout","time":1023.148793585,"data":"[ 16.72 min] scan      a=0.25 c0= 0.6850 -\u003e c=0.6850 loss=9.739e-06 (ok, 44.9s)\r\n"}
+,{"stream_name":"stdout","time":1067.365781128,"data":"[ 17.46 min] scan      a=0.25 c0= 0.2000 -\u003e c=0.2000 loss=1.109e-02 (ok, 44.2s)\r\n"}
+,{"stream_name":"stdout","time":1110.768286486,"data":"[ 18.18 min] scan      a=0.25 c0= 0.2306 -\u003e c=0.2306 loss=6.313e-03 (ok, 43.4s)\r\n"}
+,{"stream_name":"stdout","time":1154.621433462,"data":"[ 18.91 min] scan      a=0.25 c0= 0.2660 -\u003e c=0.2660 loss=3.809e-04 (ok, 43.8s)\r\n"}
+,{"stream_name":"stdout","time":1197.649678613,"data":"[ 19.63 min] scan      a=0.25 c0= 0.3537 -\u003e c=0.3537 loss=1.214e-04 (ok, 43.0s)\r\n"}
+,{"stream_name":"stdout","time":1241.692737365,"data":"[ 20.36 min] scan      a=0.25 c0= 0.4079 -\u003e c=0.4079 loss=8.109e-05 (ok, 44.1s)\r\n"}
+,{"stream_name":"stdout","time":1286.030384806,"data":"[ 21.10 min] scan      a=0.25 c0= 0.4704 -\u003e c=0.4704 loss=4.179e-05 (ok, 44.3s)\r\n"}
+,{"stream_name":"stdout","time":1329.22868022,"data":"[ 21.82 min] scan      a=0.25 c0= 0.5424 -\u003e c=0.5424 loss=2.245e-05 (ok, 43.2s)\r\n"}
+,{"stream_name":"stdout","time":1372.88485164,"data":"[ 22.55 min] scan      a=0.25 c0= 0.6255 -\u003e c=0.6255 loss=9.214e-06 (ok, 43.6s)\r\n"}
+,{"stream_name":"stdout","time":1415.80986342,"data":"[ 23.26 min] scan      a=0.25 c0= 0.8318 -\u003e c=0.8318 loss=4.196e-04 (ok, 42.9s)\r\n"}
+,{"stream_name":"stdout","time":1458.394463117,"data":"[ 23.97 min] scan      a=0.25 c0= 0.9592 -\u003e c=0.9592 loss=2.478e-03 (ok, 42.6s)\r\n"}
+,{"stream_name":"stdout","time":1502.150808001,"data":"[ 24.70 min] scan      a=0.25 c0= 1.1062 -\u003e c=1.1062 loss=5.835e-03 (ok, 43.7s)\r\n"}
+,{"stream_name":"stdout","time":1544.041036842,"data":"[ 25.40 min] scan      a=0.25 c0= 1.2756 -\u003e c=1.2756 loss=1.062e-02 (ok, 41.9s)\r\n"}
+,{"stream_name":"stdout","time":1587.587529642,"data":"[ 26.13 min] scan      a=0.25 c0= 1.4710 -\u003e c=1.4710 loss=1.715e-02 (ok, 43.5s)\r\n"}
+,{"stream_name":"stdout","time":1631.759473038,"data":"[ 26.86 min] scan      a=0.25 c0= 1.6964 -\u003e c=1.6964 loss=2.836e-02 (ok, 44.2s)\r\n"}
+,{"stream_name":"stdout","time":1675.046083067,"data":"[ 27.58 min] scan      a=0.25 c0= 2.2559 -\u003e c=2.2559 loss=4.954e-02 (ok, 43.3s)\r\n"}
+,{"stream_name":"stdout","time":1718.080334085,"data":"[ 28.30 min] scan      a=0.25 c0= 2.6015 -\u003e c=2.6015 loss=6.134e-02 (ok, 43.0s)\r\n"}
+,{"stream_name":"stdout","time":1760.857221076,"data":"[ 29.01 min] scan      a=0.25 c0= 3.0000 -\u003e c=3.0000 loss=8.625e-02 (ok, 42.8s)\r\n"}
+,{"stream_name":"stdout","time":1803.480973003,"data":"[ 29.72 min] scan      a=0.5  c0= 0.3351 -\u003e c=0.3351 loss=4.779e-04 (ok, 42.6s)\r\n"}
+,{"stream_name":"stdout","time":1847.118569053,"data":"[ 30.45 min] scan      a=0.5  c0= 0.2000 -\u003e c=0.2000 loss=7.969e-04 (ok, 43.7s)\r\n"}
+,{"stream_name":"stdout","time":1889.573002947,"data":"[ 31.16 min] scan      a=0.5  c0= 0.2306 -\u003e c=0.2306 loss=1.126e-03 (ok, 42.4s)\r\n"}
+,{"stream_name":"stdout","time":1933.333913393,"data":"[ 31.89 min] scan      a=0.5  c0= 0.2660 -\u003e c=0.2660 loss=1.202e-03 (ok, 43.8s)\r\n"}
+,{"stream_name":"stdout","time":1977.293881311,"data":"[ 32.62 min] scan      a=0.5  c0= 0.3537 -\u003e c=0.3537 loss=6.935e-04 (ok, 43.9s)\r\n"}
+,{"stream_name":"stdout","time":2022.386513381,"data":"[ 33.37 min] scan      a=0.5  c0= 0.4079 -\u003e c=0.4079 loss=8.613e-04 (ok, 45.1s)\r\n"}
+,{"stream_name":"stdout","time":2069.215633227,"data":"[ 34.15 min] scan      a=0.5  c0= 0.4704 -\u003e c=0.4704 loss=5.528e-04 (ok, 46.8s)\r\n"}
+,{"stream_name":"stdout","time":2115.149423555,"data":"[ 34.92 min] scan      a=0.5  c0= 0.5424 -\u003e c=0.5424 loss=2.662e-03 (ok, 45.9s)\r\n"}
+,{"stream_name":"stdout","time":2159.42312576,"data":"[ 35.66 min] scan      a=0.5  c0= 0.6255 -\u003e c=0.6255 loss=3.756e-03 (ok, 44.2s)\r\n"}
+,{"stream_name":"stdout","time":2205.288058778,"data":"[ 36.42 min] scan      a=0.5  c0= 0.8318 -\u003e c=0.8318 loss=1.492e-02 (ok, 45.9s)\r\n"}
+,{"stream_name":"stdout","time":2250.484088973,"data":"[ 37.17 min] scan      a=0.5  c0= 0.9592 -\u003e c=0.9592 loss=2.389e-02 (ok, 45.2s)\r\n"}
+,{"stream_name":"stdout","time":2296.251002004,"data":"[ 37.94 min] scan      a=0.5  c0= 1.1062 -\u003e c=1.1062 loss=2.848e-02 (ok, 45.8s)\r\n"}
+,{"stream_name":"stdout","time":2340.475980703,"data":"[ 38.67 min] scan      a=0.5  c0= 1.2756 -\u003e c=1.2756 loss=3.369e-02 (ok, 44.2s)\r\n"}
+,{"stream_name":"stdout","time":2382.153017275,"data":"[ 39.37 min] scan      a=0.5  c0= 1.4710 -\u003e c=1.4710 loss=4.401e-02 (ok, 41.6s)\r\n"}
+,{"stream_name":"stdout","time":2423.876764352,"data":"[ 40.06 min] scan      a=0.5  c0= 1.6964 -\u003e c=1.6964 loss=5.068e-02 (ok, 41.7s)\r\n"}
+,{"stream_name":"stdout","time":2466.039056441,"data":"[ 40.77 min] scan      a=0.5  c0= 2.2559 -\u003e c=2.2559 loss=8.689e-02 (ok, 42.1s)\r\n"}
+,{"stream_name":"stdout","time":2506.612790003,"data":"[ 41.44 min] scan      a=0.5  c0= 2.6015 -\u003e c=2.6015 loss=1.076e-01 (ok, 40.6s)\r\n"}
+,{"stream_name":"stdout","time":2548.200665785,"data":"[ 42.14 min] scan      a=0.5  c0= 3.0000 -\u003e c=3.0000 loss=1.557e-01 (ok, 41.6s)\r\n"}
+,{"stream_name":"stdout","time":2548.200714541,"data":"[ 42.14 min] a=0.0: lokale Minima (c, loss, Rand): [(1.0067338656798255, 5.82100324496676e-06, False)]\r\n"}
+,{"stream_name":"stdout","time":2592.599915188,"data":"[ 42.88 min] learn_c   a=0.0  c0= 1.0067 -\u003e c=0.9899 loss=1.061e-06 (ok, 44.4s)\r\n"}
+,{"stream_name":"stdout","time":2592.599956698,"data":"[ 42.88 min] a=0.25: lokale Minima (c, loss, Rand): [(0.6254985615161944, 9.214331652758737e-06, False)]\r\n"}
+,{"stream_name":"stdout","time":2633.279024343,"data":"[ 43.55 min] learn_c   a=0.25 c0= 0.6255 -\u003e c=0.6745 loss=4.728e-06 (ok, 40.7s)\r\n"}
+,{"stream_name":"stdout","time":2633.279063151,"data":"[ 43.55 min] a=0.5: lokale Minima (c, loss, Rand): [(0.3351123700765413, 0.0004778864428626509, False), (0.4703565923996302, 0.000552833225814453, False), (0.2, 0.0007969325957613397, True)]\r\n"}
+,{"stream_name":"stdout","time":2673.103422109,"data":"[ 44.22 min] learn_c   a=0.5  c0= 0.3351 -\u003e c=0.1414 loss=3.950e-05 (ok, 39.9s)\r\n"}
+,{"stream_name":"stdout","time":2712.834551833,"data":"[ 44.88 min] learn_c   a=0.5  c0= 0.4704 -\u003e c=0.3640 loss=6.977e-05 (ok, 39.7s)\r\n"}
+,{"stream_name":"stdout","time":2754.226752194,"data":"[ 45.57 min] learn_c   a=0.5  c0= 0.2000 -\u003e c=0.0500 loss=3.245e-05 (ok, 41.4s)\r\n"}
+,{"stream_name":"stdout","time":2795.951107328,"data":"[ 46.26 min] scan_fp32 a=0.0  c0= 0.2000 -\u003e c=0.2000 loss=2.273e-02 (ok, 41.7s)\r\n"}
+,{"stream_name":"stdout","time":2835.352963467,"data":"[ 46.92 min] scan_fp32 a=0.0  c0= 0.2306 -\u003e c=0.2306 loss=1.505e-02 (ok, 39.4s)\r\n"}
+,{"stream_name":"stdout","time":2873.82033776,"data":"[ 47.56 min] scan_fp32 a=0.0  c0= 0.2660 -\u003e c=0.2660 loss=8.705e-03 (ok, 38.5s)\r\n"}
+,{"stream_name":"stdout","time":2913.984355724,"data":"[ 48.23 min] scan_fp32 a=0.0  c0= 0.3537 -\u003e c=0.3537 loss=3.888e-03 (ok, 40.2s)\r\n"}
+,{"stream_name":"stdout","time":2956.117510415,"data":"[ 48.93 min] scan_fp32 a=0.0  c0= 0.4079 -\u003e c=0.4079 loss=1.737e-03 (ok, 42.1s)\r\n"}
+,{"stream_name":"stdout","time":2997.765624694,"data":"[ 49.63 min] scan_fp32 a=0.0  c0= 0.4704 -\u003e c=0.4704 loss=1.564e-03 (ok, 41.7s)\r\n"}
+,{"stream_name":"stdout","time":3039.032157618,"data":"[ 50.32 min] scan_fp32 a=0.0  c0= 0.5424 -\u003e c=0.5424 loss=7.431e-04 (ok, 41.3s)\r\n"}
+,{"stream_name":"stdout","time":3080.145421881,"data":"[ 51.00 min] scan_fp32 a=0.0  c0= 0.6255 -\u003e c=0.6255 loss=3.528e-04 (ok, 41.1s)\r\n"}
+,{"stream_name":"stdout","time":3121.167272484,"data":"[ 51.69 min] scan_fp32 a=0.0  c0= 0.8318 -\u003e c=0.8318 loss=3.212e-05 (ok, 41.0s)\r\n"}
+,{"stream_name":"stdout","time":3161.621663898,"data":"[ 52.36 min] scan_fp32 a=0.0  c0= 0.9592 -\u003e c=0.9592 loss=8.269e-06 (ok, 40.5s)\r\n"}
+,{"stream_name":"stdout","time":3201.808236042,"data":"[ 53.03 min] scan_fp32 a=0.0  c0= 1.0067 -\u003e c=1.0067 loss=7.337e-06 (ok, 40.2s)\r\n"}
+,{"stream_name":"stdout","time":3241.693881771,"data":"[ 53.69 min] scan_fp32 a=0.0  c0= 1.1062 -\u003e c=1.1062 loss=8.294e-05 (ok, 39.9s)\r\n"}
+,{"stream_name":"stdout","time":3281.209665997,"data":"[ 54.35 min] scan_fp32 a=0.0  c0= 1.2756 -\u003e c=1.2756 loss=7.453e-04 (ok, 39.5s)\r\n"}
+,{"stream_name":"stdout","time":3320.953748072,"data":"[ 55.01 min] scan_fp32 a=0.0  c0= 1.4710 -\u003e c=1.4710 loss=3.842e-03 (ok, 39.7s)\r\n"}
+,{"stream_name":"stdout","time":3360.526115634,"data":"[ 55.67 min] scan_fp32 a=0.0  c0= 1.6964 -\u003e c=1.6964 loss=8.753e-03 (ok, 39.6s)\r\n"}
+,{"stream_name":"stdout","time":3400.621189663,"data":"[ 56.34 min] scan_fp32 a=0.0  c0= 2.2559 -\u003e c=2.2559 loss=2.321e-02 (ok, 40.1s)\r\n"}
+,{"stream_name":"stdout","time":3440.883978598,"data":"[ 57.01 min] scan_fp32 a=0.0  c0= 2.6015 -\u003e c=2.6015 loss=3.510e-02 (ok, 40.2s)\r\n"}
+,{"stream_name":"stdout","time":3481.392580154,"data":"[ 57.69 min] scan_fp32 a=0.0  c0= 3.0000 -\u003e c=3.0000 loss=4.701e-02 (ok, 40.5s)\r\n"}
+,{"stream_name":"stdout","time":3482.60375806,"data":"[ 57.71 min] Fertig in 57.71 min (Schritt 3: 1.2s)\r\n"}
+,{"stream_name":"stdout","time":3485.636164606,"data":"total 884\r\n"}
+,{"stream_name":"stdout","time":3485.636191609,"data":"drwxr-xr-x 2 root root   4096 Sep 23 17:00 .\r\n"}
+,{"stream_name":"stdout","time":3485.636196603,"data":"drwxr-xr-x 3 root root   4096 Sep 23 16:02 ..\r\n"}
+,{"stream_name":"stdout","time":3485.636200311,"data":"-rw-r--r-- 1 root root 116196 Sep 23 17:00 loss_vs_c.png\r\n"}
+,{"stream_name":"stdout","time":3485.63620391,"data":"-rw-r--r-- 1 root root   7005 Sep 23 17:00 NOTES.md\r\n"}
+,{"stream_name":"stdout","time":3485.636207737,"data":"-rw-r--r-- 1 root root 518696 Sep 23 17:00 pinn_profiles.npz\r\n"}
+,{"stream_name":"stdout","time":3485.636211263,"data":"-rw-r--r-- 1 root root 152230 Sep 23 17:00 profiles.png\r\n"}
+,{"stream_name":"stdout","time":3485.636214657,"data":"-rw-r--r-- 1 root root  20942 Sep 23 17:00 results.csv\r\n"}
+,{"stream_name":"stdout","time":3485.636218208,"data":"-rw-r--r-- 1 root root  23187 Sep 23 17:00 results_evaluated.csv\r\n"}
+,{"stream_name":"stdout","time":3485.636221703,"data":"-rw-r--r-- 1 root root  26612 Sep 23 16:06 sim_profiles.npz\r\n"}
+,{"stream_name":"stdout","time":3485.636225135,"data":"-rw-r--r-- 1 root root   1489 Sep 23 16:06 sim_summary.csv\r\n"}
+,{"stream_name":"stdout","time":3485.636228747,"data":"-rw-r--r-- 1 root root   6656 Sep 23 17:00 SUMMARY.md\r\n"}
+,{"stream_name":"stdout","time":3485.63623212,"data":"# SUMMARY — gCLM Blow-up-Profile per PINN\r\n"}
+,{"stream_name":"stdout","time":3485.636236324,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636239726,"data":"Laufzeit gesamt 57.7 min; Gerät: cuda {'gpu': 'Tesla T4', 'n_gpu': 2, 's_per_adam_step': {'cuda': 0.013046757380167643, 'cpu': 0.02276880741119385}}.\r\n"}
+,{"stream_name":"stdout","time":3485.636243497,"data":"Schritt 0 1s, Schritt 1 193s, Schritt 2 54.5 min. Ausdünnung: {'t_first_run_s': 42.10386919975281, 'budget_s': 3557.89098572731, 'n_planned': 92, 'est_total_s': 3873.5559663772583, 'nc_before': 20, 'nc_after': 17}\r\n"}
+,{"stream_name":"stdout","time":3485.636248731,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636252059,"data":"## Schritt 0\r\n"}
+,{"stream_name":"stdout","time":3485.636255353,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.63625865,"data":"- Hilbert-Gate H[1/(1+x²)] \u003c 1e-8: **Ja**\r\n"}
+,{"stream_name":"stdout","time":3485.636262403,"data":"  - H[1/(1+x^2)] = x/(1+x^2), L=1 (Gate): max. Fehler 4.72e-16\r\n"}
+,{"stream_name":"stdout","time":3485.636265791,"data":"  - H[x/(1+x^2)] = -1/(1+x^2), L=1: max. Fehler 6.38e-16\r\n"}
+,{"stream_name":"stdout","time":3485.636278969,"data":"  - H[1/(1+x^2)^2] = x(x^2+3)/(2(1+x^2)^2), L=1: max. Fehler 6.38e-16\r\n"}
+,{"stream_name":"stdout","time":3485.636281851,"data":"  - H[1/(1+x^2)] = x/(1+x^2), L=1.7: max. Fehler 5.55e-16\r\n"}
+,{"stream_name":"stdout","time":3485.636284429,"data":"- Exakter Fernfeldterm H[Im E_s] = -Re E_s (Quadratur, s=0.5/1.5): max. Fehler 2.12e-10; U_sing geschlossen vs. Quadratur 2.66e-15\r\n"}
+,{"stream_name":"stdout","time":3485.636287175,"data":"- sympy: Profilgleichung bestätigt (Differenz = 0), Schließung U' = H[Ω] (Differenz = 0), exaktes CLM-Profil Ω = -4ξ/(4+ξ²) erfüllt R = 0.\r\n"}
+,{"stream_name":"stdout","time":3485.636290171,"data":"- Selbsttest Residuum-Pipeline mit exaktem CLM-Profil: max|R| regulär 2.0e-15, singulär 4.4e-16; U-Fehler 1.7e-06 / 1.1e-16 → Ja\r\n"}
+,{"stream_name":"stdout","time":3485.636292974,"data":"- Abweichungen von der Aufgabenstellung (Parität, Normierung, Fernfeld): siehe NOTES.md.\r\n"}
+,{"stream_name":"stdout","time":3485.636295635,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636298106,"data":"## Schritt 1 — Referenz durch Zeitintegration\r\n"}
+,{"stream_name":"stdout","time":3485.636300739,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636303148,"data":"| a | N | Stopp | max|ω| | T | c (Kernbreite) | c_alt (ω_x(x0)) | γ (max|ω|~τ^γ) |\r\n"}
+,{"stream_name":"stdout","time":3485.636306062,"data":"|---|---|---|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636309711,"data":"| 0.0 | 4096 | - | 38.2 | 2.012 | 1.158 | 1.224 | -1.062 |\r\n"}
+,{"stream_name":"stdout","time":3485.636312346,"data":"| 0.0 | 65536 | - | 600.8 | 2 | 1.007 | 1.011 | -1.003 |\r\n"}
+,{"stream_name":"stdout","time":3485.636314966,"data":"| 0.25 | 4096 | - | 300 | 2.409 | 0.6963 | 0.7038 | -1.006 |\r\n"}
+,{"stream_name":"stdout","time":3485.636317526,"data":"| 0.25 | 16384 | - | 2281 | 2.409 | 0.685 | 0.6873 | -1.001 |\r\n"}
+,{"stream_name":"stdout","time":3485.636320121,"data":"| 0.5 | 4096 | - | 1.006e+04 | 3.142 | 0.3349 | 0.336 | -1.001 |\r\n"}
+,{"stream_name":"stdout","time":3485.636322697,"data":"| 0.5 | 16384 | - | 1e+04 | 3.142 | 0.3351 | 0.3359 | -1.001 |\r\n"}
+,{"stream_name":"stdout","time":3485.636325322,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636327743,"data":"- a=0.0: Selbstähnlichkeit des reskalierten Profils (max|ω|=156 vs. Viertel davon): relL2 = 0.002\r\n"}
+,{"stream_name":"stdout","time":3485.636330424,"data":"- a=0.25: Selbstähnlichkeit des reskalierten Profils (max|ω|=541 vs. Viertel davon): relL2 = 0.000\r\n"}
+,{"stream_name":"stdout","time":3485.636333071,"data":"- a=0.5: Selbstähnlichkeit des reskalierten Profils (max|ω|=2580 vs. Viertel davon): relL2 = 0.000\r\n"}
+,{"stream_name":"stdout","time":3485.636335722,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636338143,"data":"## Schritt 2/3 — Ergebnisse je a\r\n"}
+,{"stream_name":"stdout","time":3485.636340697,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.63634313,"data":"### a = 0.0\r\n"}
+,{"stream_name":"stdout","time":3485.636345619,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636348027,"data":"| Kriterium | Wert | Ja/Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636398935,"data":"|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636407673,"data":"| Referenz c_ref aus Zeitintegration | 1.007 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636410479,"data":"| Lernbares c konvergiert nahe c_ref (|c−c_ref| \u003c 0.02) | c=0.9899, Δ=-0.0168 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636413421,"data":"| Profil = reskaliertes Zeitintegral (relL2 \u003c 0.05, |ξ|≤10) | 0.02411 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636420949,"data":"| **Stabiles Profil bestätigt** (beide Kriterien) | | **Ja** |\r\n"}
+,{"stream_name":"stdout","time":3485.636423778,"data":"| Weitere Minima mit kleinem Residuum (mean R²/mean Ω² \u003c 1e-06) | 0 | Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.63642654,"data":"| Vergleich mit exaktem CLM-Profil (c=1) | relL2 = 0.01524, |c−1| = 0.0101 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636429212,"data":"| (Info) Lauf mit festem c = c_ref | loss=5.82e-06, relL2 zum Zeitintegral 0.02807 | – |\r\n"}
+,{"stream_name":"stdout","time":3485.636431882,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636434278,"data":"Läufe mit lernbarem c (Start an lokalen Minima des Scans):\r\n"}
+,{"stream_name":"stdout","time":3485.636437335,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636439773,"data":"| c_start | c_final | final loss | mean R²/mean Ω² | mean R² (abs) | mean (dR/dξ)²/mean Ω² | Norm.-Strafe | s (Fernfeld) | 1/c | Nullstellen Ω' (ξ\u003e0) | Status |\r\n"}
+,{"stream_name":"stdout","time":3485.636442997,"data":"|---|---|---|---|---|---|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636445606,"data":"| 1.0067 | 0.9899 | 1.06e-06 | 8.67e-07 | 3.85e-07 | 1.94e-06 | 7.3e-12 | 0.847 | 1.010 | 1 | ok |\r\n"}
+,{"stream_name":"stdout","time":3485.636448194,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636450673,"data":"Hinweis a=0: Nach der Herleitung in NOTES.md (komplexe Riccati-Gleichung) hat CLM nur **ein** glattes, abklingendes selbstähnliches Profil (c=1). Jedes weitere Minimum bei a=0 ist daher ein Artefakt der Methode, kein instabiles Profil.\r\n"}
+,{"stream_name":"stdout","time":3485.636453602,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636456822,"data":"Scan (festes c): 0.200→2.5e-02, 0.231→1.2e-02, 0.266→6.2e-03, 0.354→3.7e-03, 0.408→2.3e-03, 0.470→1.1e-03, 0.542→7.8e-04, 0.625→3.6e-04, 0.832→3.5e-05, 0.959→1.0e-05, 1.007→5.8e-06, 1.106→8.3e-05, 1.276→7.4e-04, 1.471→3.9e-03, 1.696→9.1e-03, 2.256→2.6e-02, 2.601→3.6e-02, 3.000→4.7e-02\r\n"}
+,{"stream_name":"stdout","time":3485.636460114,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636462549,"data":"### a = 0.25\r\n"}
+,{"stream_name":"stdout","time":3485.636465019,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636467473,"data":"| Kriterium | Wert | Ja/Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636470007,"data":"|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636472484,"data":"| Referenz c_ref aus Zeitintegration | 0.685 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636475022,"data":"| Lernbares c konvergiert nahe c_ref (|c−c_ref| \u003c 0.02) | c=0.6745, Δ=-0.0104 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636477782,"data":"| Profil = reskaliertes Zeitintegral (relL2 \u003c 0.05, |ξ|≤10) | 0.059 | Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636480468,"data":"| **Stabiles Profil bestätigt** (beide Kriterien) | | **Nein** |\r\n"}
+,{"stream_name":"stdout","time":3485.636483137,"data":"| Weitere Minima mit kleinem Residuum (mean R²/mean Ω² \u003c 1e-06) | 0 | Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636485828,"data":"| (Info) Lauf mit festem c = c_ref | loss=9.74e-06, relL2 zum Zeitintegral 0.007845 | – |\r\n"}
+,{"stream_name":"stdout","time":3485.636488605,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636491013,"data":"Läufe mit lernbarem c (Start an lokalen Minima des Scans):\r\n"}
+,{"stream_name":"stdout","time":3485.636493591,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636496002,"data":"| c_start | c_final | final loss | mean R²/mean Ω² | mean R² (abs) | mean (dR/dξ)²/mean Ω² | Norm.-Strafe | s (Fernfeld) | 1/c | Nullstellen Ω' (ξ\u003e0) | Status |\r\n"}
+,{"stream_name":"stdout","time":3485.636501263,"data":"|---|---|---|---|---|---|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636503963,"data":"| 0.6255 | 0.6745 | 4.73e-06 | 2.20e-06 | 1.54e-06 | 2.52e-05 | 5.2e-10 | 0.305 | 1.483 | 1 | ok |\r\n"}
+,{"stream_name":"stdout","time":3485.636506635,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636509114,"data":"Scan (festes c): 0.200→1.1e-02, 0.231→6.3e-03, 0.266→3.8e-04, 0.354→1.2e-04, 0.408→8.1e-05, 0.470→4.2e-05, 0.542→2.2e-05, 0.625→9.2e-06, 0.685→9.7e-06, 0.832→4.2e-04, 0.959→2.5e-03, 1.106→5.8e-03, 1.276→1.1e-02, 1.471→1.7e-02, 1.696→2.8e-02, 2.256→5.0e-02, 2.601→6.1e-02, 3.000→8.6e-02\r\n"}
+,{"stream_name":"stdout","time":3485.636512331,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636514764,"data":"### a = 0.5\r\n"}
+,{"stream_name":"stdout","time":3485.636517208,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636519662,"data":"| Kriterium | Wert | Ja/Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.6365222,"data":"|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636524675,"data":"| Referenz c_ref aus Zeitintegration | 0.3351 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636527226,"data":"| Lernbares c konvergiert nahe c_ref (|c−c_ref| \u003c 0.02) | c=0.3640, Δ=+0.0289 | Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636529982,"data":"| Profil = reskaliertes Zeitintegral (relL2 \u003c 0.05, |ξ|≤10) | 0.03756 | Ja |\r\n"}
+,{"stream_name":"stdout","time":3485.636534737,"data":"| **Stabiles Profil bestätigt** (beide Kriterien) | | **Nein** |\r\n"}
+,{"stream_name":"stdout","time":3485.636537438,"data":"| Weitere Minima mit kleinem Residuum (mean R²/mean Ω² \u003c 1e-06) | 0 | Nein |\r\n"}
+,{"stream_name":"stdout","time":3485.636540742,"data":"| (Info) Lauf mit festem c = c_ref | loss=4.78e-04, relL2 zum Zeitintegral 0.6235 | – |\r\n"}
+,{"stream_name":"stdout","time":3485.636543687,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636546577,"data":"Läufe mit lernbarem c (Start an lokalen Minima des Scans):\r\n"}
+,{"stream_name":"stdout","time":3485.636549192,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636551764,"data":"| c_start | c_final | final loss | mean R²/mean Ω² | mean R² (abs) | mean (dR/dξ)²/mean Ω² | Norm.-Strafe | s (Fernfeld) | 1/c | Nullstellen Ω' (ξ\u003e0) | Status |\r\n"}
+,{"stream_name":"stdout","time":3485.636554643,"data":"|---|---|---|---|---|---|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":3485.636557244,"data":"| 0.3351 | 0.1414 | 3.95e-05 | 2.33e-06 | 4.06e-06 | 3.72e-04 | 9.0e-12 | 0.245 | 7.070 | 3 | ok |\r\n"}
+,{"stream_name":"stdout","time":3485.636559992,"data":"| 0.4704 | 0.3640 | 6.98e-05 | 6.12e-05 | 5.87e-05 | 8.54e-05 | 7.1e-08 | 0.670 | 2.747 | 2 | ok |\r\n"}
+,{"stream_name":"stdout","time":3485.636563262,"data":"| 0.2000 | 0.0500 | 3.25e-05 | 2.05e-06 | 5.84e-06 | 3.04e-04 | 1.3e-08 | 1.810 | 20.000 | 2 | ok |\r\n"}
+,{"stream_name":"stdout","time":3485.636565965,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636569444,"data":"Weitere Minima (Kandidaten für instabile Profile, **nicht bewiesen**): c=0.0500 (mean R²/mean Ω²=2.0e-06, 2 Nullst. von Ω'); c=0.1414 (mean R²/mean Ω²=2.3e-06, 3 Nullst. von Ω')\r\n"}
+,{"stream_name":"stdout","time":3485.636572507,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636575054,"data":"Scan (festes c): 0.200→8.0e-04, 0.231→1.1e-03, 0.266→1.2e-03, 0.335→4.8e-04, 0.354→6.9e-04, 0.408→8.6e-04, 0.470→5.5e-04, 0.542→2.7e-03, 0.625→3.8e-03, 0.832→1.5e-02, 0.959→2.4e-02, 1.106→2.8e-02, 1.276→3.4e-02, 1.471→4.4e-02, 1.696→5.1e-02, 2.256→8.7e-02, 2.601→1.1e-01, 3.000→1.6e-01\r\n"}
+,{"stream_name":"stdout","time":3485.636578382,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636583354,"data":"## Kontrolle FP32 (a = 0)\r\n"}
+,{"stream_name":"stdout","time":3485.636585954,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636588388,"data":"- Lokale Minima FP64: 1 bei c = [1.0067]\r\n"}
+,{"stream_name":"stdout","time":3485.636591015,"data":"- Lokale Minima FP32: 1 bei c = [1.0067]\r\n"}
+,{"stream_name":"stdout","time":3485.636593543,"data":"- Minima in beiden (gleiches c): 1\r\n"}
+,{"stream_name":"stdout","time":3485.636596065,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636598472,"data":"## Fehler und Auslassungen\r\n"}
+,{"stream_name":"stdout","time":3485.636601044,"data":"\r\n"}
+,{"stream_name":"stdout","time":3485.636603527,"data":"- keine Laufzeitfehler\r\n"}
+,{"stream_name":"stderr","time":3488.532926089,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3488.532957667,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3488.722757613,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3488.722785089,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3489.423541962,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3489.766752028,"data":"[NbConvertApp] Writing 80586 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3492.442407347,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3493.516567584,"data":"[NbConvertApp] Writing 589886 bytes to __results__.html\n"}
+]
