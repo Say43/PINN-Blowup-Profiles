@@ -9,6 +9,44 @@ includes unstable profiles. How does success depend on the advection parameter `
 fails. It found no credible unstable profile. The method stops working before
 the unstable profiles become reachable.
 
+## Context
+
+Whether smooth solutions of the 3D Euler and Navier–Stokes equations can blow up
+in finite time is a central open question in fluid mechanics. One line of work
+searches for self-similar blow-up profiles numerically, increasingly with
+physics-informed neural networks: stable profiles for Boussinesq/axisymmetric
+Euler [1] and, with high-precision Gauss–Newton training, families of *unstable*
+profiles [2]. In September 2026 OpenAI announced a forced Navier–Stokes blow-up
+construction based on a different, cascade-type mechanism [5]; it does not use
+self-similar profiles or neural networks, and at the time of writing it has not
+been independently verified.
+
+This project works at the bottom of that ladder. The generalized
+Constantin–Lax–Majda model is a one-dimensional model of vortex stretching with
+known exact solutions at `a = 0` and `a = 1/2` [3] and proven self-similar
+profiles for all `a ≤ 1` [4]. That makes it a test bed with ground truth: it
+shows what a small PINN on one T4 can and cannot recover before the expensive,
+high-precision methods become necessary.
+
+References:
+
+1. Y. Wang, C.-Y. Lai, J. Gómez-Serrano, T. Buckmaster, *Asymptotic self-similar
+   blow-up profile for three-dimensional axisymmetric Euler equations using
+   neural networks*, Phys. Rev. Lett.
+   [arXiv:2201.06780](https://arxiv.org/abs/2201.06780)
+2. Y. Wang et al., *Discovery of unstable singularities* (2025).
+   [arXiv:2509.14185](https://arxiv.org/abs/2509.14185)
+3. P. M. Lushnikov, D. A. Silantyev, M. Siegel, *Collapse versus blow-up and
+   global existence in the generalized Constantin–Lax–Majda equation*,
+   J. Nonlinear Sci. 31, 82 (2021).
+   [arXiv:2010.01201](https://arxiv.org/abs/2010.01201)
+4. D. Huang, X. Qin, X. Wang, D. Wei, *Self-similar finite-time blowups with
+   smooth profiles of the generalized Constantin–Lax–Majda model*,
+   Arch. Ration. Mech. Anal. (2023).
+   [arXiv:2305.05895](https://arxiv.org/abs/2305.05895)
+5. *AI Has Solved One of Math's $1 Million Millennium Prize Problems*,
+   [Quanta Magazine, 8 September 2026](https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/).
+
 ## Problem
 
 gCLM on the real line:
